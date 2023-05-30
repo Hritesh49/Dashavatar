@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.938), #000000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: montserrat;
+}
+
+.top {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 2.5rem;
+}
+
+.he {
+    color: rgba(15, 15, 15, 0.89);
+    padding: 0.55rem;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bolder;
+    font-size: 4rem;
+    background-image: linear-gradient(to right, #ffffff22, #ffffff08);
+    border-radius: 0.6rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
+
+.home {
+    color: rgb(255, 254, 254);
+    position: relative;
+    font-size: 1rem;
+    padding: 0.4rem 0.5rem;
+    background-image: linear-gradient(to right, #fcf9f9, #201f1f69);
+    box-shadow: 2px 2px 5px rgba(48, 46, 46, 0.329);
+    backdrop-filter: blur(10px);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    align-self: flex-start;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.home:hover {
+    background-image:  linear-gradient(to right, #201f1f41, #fcf9f9); ;
+}
+
+.topnav {
+    margin-top: 1rem;
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.6rem;
+    text-decoration: none;
+    font-size: 0.825rem;
+    cursor: pointer;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container {
+    box-sizing: border-box;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding: 3.50rem;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 52rem;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.container .avatar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+
+.avatar .same {
+    width: 100%;
+    height: 100%;
+}
+
+
+.container .same>img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 1.9rem;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    box-shadow: 4px 4px 8px black;
+}
+
+.container .overlay {
+    color: white;
+    background: #242424df;
+    padding: 0.625rem;
+    border-bottom-left-radius: 1.9rem;
+    border-bottom-right-radius: 1.9rem;
+    opacity: 0;
+    transition: 0.5s ease;
+    cursor: pointer;
+    text-align: center;
+    transform: translate(-0%, -100%);
+}
+
+.avatar:hover img {
+    opacity: 0.6;
+}
+
+.avatar:hover .overlay {
+    opacity: 1;
+}
+
+.overlay>h2 {
+    color: rgb(240, 225, 20);
+    font-weight: bolder;
+    font-family: monospace;
+    padding: 0.325rem;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #7db3a73a, #93c9c686);
+    border-radius: 0.6rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+}
+
+
+.overlay>p {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.625rem;
+}
+
+
+.box {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cr {
+    font-family: cursive;
+    color: azure;
+    flex-basis: 100%;
+    height: 0;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 2px;
+    text-shadow: 3px 3px 7px black;
+}
+
+.box .con {
+    border: 1px solid black;
+    border-radius: 20%;
+    width: 2.5rem;
+    height: auto;
+    margin: 2px;
+}
+
+
+/* media query starts */
+
+/* for 4k */
+@media screen and (max-width:2560px) {
+    html {
+        font-size: 170%;
+    }
+
+    .box .con {
+        border: 3px solid rgb(0, 0, 0);
+        width: 85px;
+    }
+}
+
+/* for large laptop */
+@media screen and (max-width:1440px) {
+    html {
+        font-size: 140%;
+    }
+
+    .box .con {
+        border: 2px solid rgb(0, 0, 0);
+        width: 65px;
+    }
+}
+
+/* for normal laptop */
+@media screen and (max-width:1024px) {
+    html {
+        font-size: 100%;
+    }
+
+    .box .con {
+        border: 1.5px solid rgb(0, 0, 0);
+        width: 45px;
+    }
+}
+
+/* for tablet */
+@media screen and (max-width:768px) {
+    html {
+        font-size: 88%;
+    }
+
+    .box .con {
+        border: 1px solid rgb(0, 0, 0);
+        width: 40px;
+    }
+}
+
+/* for xl size mobile */
+@media screen and (max-width:640px) {
+    html {
+        font-size: 70%;
+    }
+
+    .home {
+        margin-bottom: 0.8em;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box .con {
+        border: 1px solid rgb(0, 0, 0);
+        width: 35px;
+    }
+}
+
+/* for l size mobile */
+@media screen and (max-width:425px) {
+    html {
+        font-size: 65%;
+    }
+
+    .home {
+        margin-bottom: 0.75em;
+    }
+
+    .container {
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .box .con {
+        border: 1px solid rgb(0, 0, 0);
+        width: 32px;
+    }
+}
+
+/* for m size mobile */
+@media screen and (max-width:375px) {
+    html {
+        font-size: 65%;
+    }
+
+    .home {
+        margin-bottom: 0.65em;
+    }
+
+    .container {
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .box .con {
+        border: 1px solid rgb(0, 0, 0);
+        width: 32px;
+    }
+}
+
+/* for s size mobile */
+@media screen and (max-width:320px) {
+    html {
+        font-size: 54%;
+    }
+
+    .home {
+        margin-bottom: 0.65em;
+    }
+
+    .container {
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .box .con {
+        border: 1px solid rgb(0, 0, 0);
+        width: 25px;
+    }
+}
+
+
+/* media query ends */
