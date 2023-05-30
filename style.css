@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: linear-gradient(to bottom left, #000000, rgba(199, 181, 181, 0.37), #000000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: poppins;
+}
+
+.container {
+    margin: 40px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.h {
+    color: rgb(228, 192, 145);
+    padding: 10px;
+    font-size: 2.2rem;
+    font-family: Copperplate, Papyrus, fantasy;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.H {
+    color: rgb(226, 206, 179);
+    border-radius: 20px;
+    padding: 0.65rem;
+    font-size: 3.5rem;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, #ffffff3d, #00000048);
+    box-shadow: 0.45rem 0.45rem 0.65rem rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+    z-index: 2;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px rgba(0, 0, 0, 0.514);
+}
+
+.vishnu {
+    margin-bottom: 40px;
+    display: flex;
+    width: 56%;
+    justify-content: center;
+    position: relative;
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+.vishnu>img {
+    width: 100%;
+    height: auto;
+    border: 0.25rem solid azure;
+    border-radius: 10%;
+    opacity: 1;
+    display: inline-block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    box-shadow: 0.1875rem 0.375rem rgba(0, 0, 0, 0.6);
+}
+
+.vishnu .button {
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ease;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #dad2d2;
+    font-size: 1.3rem;
+    padding: 8px 18px;
+    border: 4px solid #838383;
+    cursor: pointer;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.vishnu:hover img {
+    opacity: 0.3;
+}
+
+.vishnu:hover .button {
+    opacity: 1;
+}
+
+.vishnu .button:hover {
+    background-color: #ffffffe3;
+    border-color: #636363e0;
+}
+
+.da {
+    border: 0.155rem solid rgba(209, 132, 76, 0.918);
+    border-radius: 2%;
+    margin-bottom: 3rem;
+    display: flex;
+    width: 42%;
+    justify-content: center;
+    position: relative;
+    margin-left: 29%;
+    margin-right: 29%;
+    background-color: antiquewhite;
+    box-shadow: 0.1875rem 0.375rem rgba(0, 0, 0, 0.6);
+    padding: 0.25rem;
+}
+
+.da>p {
+    font-size: 1.2rem;
+    
+}
+
+.da .highlight {
+    color: rgb(212, 99, 118);
+    font-weight: bold;
+
+}
+
+.box {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.copy {
+    font-family: cursive;
+    color: azure;
+    flex-basis: 100%;
+    height: 0;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 2px;
+    text-shadow: 1px 1px 3px #535353;
+}
+
+.box .contact {
+    border: 2px solid;
+    border-radius: 20%;
+    width: 35px;
+    height: auto;
+    margin: 2px;
+}
+
+/* /* media query starts  */
+
+
+@media screen and (max-width: 2560px) {
+    html {
+        font-size: 190%;
+    }
+
+    .vishnu {
+        width: 74%;
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+
+    .da {
+        width: 48%;
+        margin-left: 26%;
+        margin-right: 26%;
+    }
+
+    .box .contact {
+        border: 3px solid rgb(0, 0, 0);
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    html {
+        font-size: 140%;
+    }
+
+    .vishnu {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .da {
+        width: 48%;
+        margin-left: 26%;
+        margin-right: 26%;
+    }
+
+    .box .contact {
+        border: 2px solid rgb(0, 0, 0);
+        width: 55px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 100%;
+    }
+
+    .box .contact {
+        border: 1.5px solid rgb(0, 0, 0);
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 88%;
+    }
+
+    .vishnu {
+        width: 68%;
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+
+    .da {
+        width: 48%;
+        margin-left: 26%;
+        margin-right: 26%;
+    }
+
+    .box .contact {
+        border: 2px solid rgb(0, 0, 0);
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 80%;
+    }
+
+    .vishnu {
+        width: 74%;
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+
+    .da {
+        width: 52%;
+        margin-left: 24%;
+        margin-right: 24%;
+    }
+
+    .box .contact {
+        border: 2px solid rgb(0, 0, 0);
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 65%;
+    }
+
+    .vishnu {
+        width: 74%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .da {
+        width: 54%;
+        margin-left: 23%;
+        margin-right: 23%;
+    }
+
+    .box .contact {
+        border: 1px solid rgb(0, 0, 0);
+        width: 32px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 58%;
+    }
+
+    .vishnu {
+        width: 78%;
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+
+    .da {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .box .contact {
+        border: 1px solid rgb(0, 0, 0);
+        width: 32px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 51.3%;
+    }
+
+    .vishnu {
+        width: 74%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .da {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .box .contact {
+        border: 1px solid rgb(0, 0, 0);
+        width: 25px;
+    }
+}
+
+/* media query ends */
